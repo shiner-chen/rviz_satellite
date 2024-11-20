@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(rviz_satellite)
-
+set(FBOW_INCLUDE_DIRS "/usr/local/include")
+set(FBOW_LIBS "/usr/local/lib/libfbow.so")
+find_package(fbow REQUIRED)
 find_package(catkin REQUIRED
   COMPONENTS
     roscpp
